@@ -12,7 +12,9 @@ import FooterSoc from '../FooterSoc/FooterSoc'
 
 function Main() {
   return (
-    <div>
+    <div
+    style={{overflowX: "hidden"}}
+    >
       <Navbar />
       <Header />
       <CRMHeading />
