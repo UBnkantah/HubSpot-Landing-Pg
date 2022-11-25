@@ -1,0 +1,19 @@
+.lea-a-grow{
+    background-color: rgb(11, 132, 132);
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-grow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1em;
+    width: 300px;
+    height: 300px;
+}
+.sub-grow p{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}

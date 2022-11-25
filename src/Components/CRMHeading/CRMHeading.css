@@ -1,0 +1,41 @@
+.Crm-body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 249, 252);
+}
+
+.crmheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    padding: 50px 0px;
+    padding: 20px 50px;
+}
+.crmheading h1{
+    font-size: 30px;
+}
+.crmheading p{
+    padding: 30px 0px;
+}
+.crmheading .button-btns{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.crmheading .button-btns .crm-btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255, 92, 53);
+    color: white;
+    border-radius: 2px;
+}
+.crmheading .button-btns .demo-btn{
+    border: 1px solid rgb(255, 92, 53);
+    padding: 10px 20px;
+    color: rgb(255, 92, 53);
+    background-color: white;
+}

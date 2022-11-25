@@ -1,0 +1,68 @@
+
+.header{
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    gap: 2em;
+    background-color: rgb(255, 92, 53);
+    color: white;
+    padding: 50px 0px;
+}
+.header .header-details{
+    width: 400px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding: 0px 100px;
+}
+.header .header-details h2{
+    font-size: 25px;
+    padding: 15px 0px;
+}
+.header .header-details .button-btns{
+    padding: 15px 0px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-details .button-btns .demo{
+    padding: 12px 15px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: white;
+}
+.header-details .button-btns .free{
+    padding: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header-details .button-btns .free:hover{
+    background-color: white;
+    color: rgb(255, 92, 53);
+}
+.header .header-img{
+    flex: 1;
+}
+.header .header-img img{
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header .header-details{
+        width: 320px;
+        padding: 0px 50px;
+    }
+}

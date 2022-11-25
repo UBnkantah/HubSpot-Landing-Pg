@@ -1,0 +1,27 @@
+.partners{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    gap: 2em;
+}
+.partners-details{
+    width: 300px;
+}
+.partners-img{
+    width: 500px;
+}
+.partners-img img{
+    width: 100%;
+}
+.partners-details p{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .partners{
+        padding: 10px 30px;
+    }
+}

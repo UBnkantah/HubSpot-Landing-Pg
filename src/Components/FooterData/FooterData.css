@@ -1,0 +1,28 @@
+.footerData{
+    display: flex;
+    background-color: rgb(33, 51, 67);
+    color: white;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 2em;
+    
+}
+.footerData .sub-footer ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.footerData .sub-footer h3{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.footerData .sub-footer .last-part{
+    padding-top: 20px;
+}
+@media screen and (max-width: 767px) {
+    .footerData{
+        padding: 20px 50px;
+    }
+}
