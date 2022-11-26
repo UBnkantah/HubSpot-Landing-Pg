@@ -1,36 +1,89 @@
 import React from 'react'
+import {motion} from "framer-motion"
 import { CRMData } from '../CRMData/CRMData'
-import MatLogo from "../Images/mat_img.png"
-import MarketHub from "../Images/MarketingHub_Icon.png"
 import "./MarkHub.css"
 
-function MarkHub() {
+
+const secTxtAnimate ={
+    offScreen:{x:-100, opacity: 0},
+    onscreen:{
+        x:0,
+        opacity: 1,
+        transition: {
+            type: "string",
+            bounce: 0.5,
+            duration: 1
+        }
+    }
+}
+
+const txtAnimate ={
+    offScreen:{y:100, opacity: 0},
+    onscreen:{
+        y:0,
+        opacity: 1,
+        transition: {
+            type: "string",
+            bounce: 0.4,
+            duration: 1
+        }
+    }
+}
+
+const MarkHub = () => {
   return (
     <div className='markHub'>
         {CRMData.map((item) => {
             return(
-                <div className='sub-markHub' key={item.id}>
-                    <div className='head-markHub'>
-                        <div><img src={item.image} alt="" /> </div>
-                        <div><h2>{item.header}</h2></div>
-                    </div>
-                    <p className='txt-markHub'>{item.text}</p>
+                <motion.div className='sub-markHub' 
+                initial={"offScreen"}
+                whileInView={"onscreen"}
+                viewport={{once:false, amount:1}}
+                transition={{staggerChildren: 0.5}}
+                key={item.id}>
+                    <motion.div className='head-markHub'>
+                        <motion.div
+                        variants={secTxtAnimate}
+                        ><img src={item.image} alt="" /> </motion.div>
+                        <motion.div><motion.h2
+                        variants={txtAnimate}
+                        >{item.header}</motion.h2></motion.div>
+                    </motion.div>
+                    <motion.p 
+                    variants={txtAnimate}
+                    className='txt-markHub'>{item.text}</motion.p>
                     <hr />
-                    <h4>Popular features</h4>
-                    <div className='sub-txt-lo'>
-                        <div className='sub-txt-img'><img src={item.subImg} alt="" /></div>
-                        <div className='sub-txt-p'><p>{item.subTextOne}</p></div>
-                    </div>
-                    <div className='sub-txt-lo'>
-                        <div className='sub-txt-img'><img src={item.subImg} alt="" /></div>
-                        <div className='sub-txt-p'><p>{item.subTextTwo}</p></div>
-                    </div>
-                    <div className='sub-txt-lo'>
-                        <div className='sub-txt-img'><img src={item.subImg} alt="" /></div>
-                        <div className='sub-txt-p'><p>{item.subTextThree}</p></div>
-                    </div>
-                    <button className='sub-button'>Get Started</button>
-                </div>
+                    <motion.h4
+                    variants={txtAnimate}
+                    >Popular features</motion.h4>
+                    <motion.div className='sub-txt-lo'>
+                        <motion.div
+                        variants={txtAnimate}
+                        className='sub-txt-img'><img src={item.subImg} alt="" /></motion.div>
+                        <motion.div 
+                        variants={txtAnimate}
+                        className='sub-txt-p'><p>{item.subTextOne}</p></motion.div>
+                    </motion.div>
+                    <motion.div className='sub-txt-lo'>
+                        <motion.div
+                        variants={txtAnimate}
+                        className='sub-txt-img'><img src={item.subImg} alt="" /></motion.div>
+                        <motion.div
+                        variants={txtAnimate}
+                        className='sub-txt-p'><p>{item.subTextTwo}</p></motion.div>
+                    </motion.div>
+                    <motion.div className='sub-txt-lo'>
+                        <motion.div 
+                        variants={txtAnimate}
+                        className='sub-txt-img'><img src={item.subImg} alt="" /></motion.div>
+                        <motion.div 
+                        variants={txtAnimate}
+                        className='sub-txt-p'><p>{item.subTextThree}</p></motion.div>
+                    </motion.div>
+                    <motion.button 
+                    variants={txtAnimate}
+                    className='sub-button'>Get Started</motion.button>
+                </motion.div>
             )
         })}
         

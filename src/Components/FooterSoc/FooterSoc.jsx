@@ -3,7 +3,6 @@ import HubSLogo from "../Images/HubStBlg.png"
 import SocIcons from "../Images/soc-icons.png"
 import "./FooterSoc.css"
 
-
 const FooterSoc = () => {
   return (
     <div className='footer-soc'>

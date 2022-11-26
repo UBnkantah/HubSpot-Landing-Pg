@@ -1,6 +1,7 @@
 import React from 'react'
 import "./FooterData.css"
 
+
 function FooterData() {
   return (
     <div className='footerData'>
