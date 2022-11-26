@@ -1,4 +1,3 @@
-
 .header{
     display: flex;
     text-align: start;
@@ -7,15 +6,16 @@
     background-color: rgb(255, 92, 53);
     color: white;
     padding: 50px 0px;
+    flex-wrap: wrap;
 }
 .header .header-details{
-    width: 400px;
+    width: 500px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: start;
-    padding: 0px 100px;
+    padding: 0px 50px;
 }
 .header .header-details h2{
     font-size: 25px;
@@ -50,6 +50,7 @@
     color: rgb(255, 92, 53);
 }
 .header .header-img{
+    width: 550px;
     flex: 1;
 }
 .header .header-img img{
@@ -57,12 +58,14 @@
 }
 
 @media screen and (max-width: 767px) {
-    .header{
-        display: flex;
-        flex-direction: column;
-    }
     .header .header-details{
         width: 320px;
-        padding: 0px 50px;
+        /* padding: 0px 50px; */
+    }
+    .header .header-img{
+        width: 320px;
+    }
+    .header .header-img img{
+        width: 100%;
     }
 }

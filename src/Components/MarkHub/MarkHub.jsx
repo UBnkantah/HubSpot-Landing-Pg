@@ -52,7 +52,9 @@ const MarkHub = () => {
                     <motion.p 
                     variants={txtAnimate}
                     className='txt-markHub'>{item.text}</motion.p>
-                    <hr />
+                    <motion.hr
+                    variants={txtAnimate}
+                    />
                     <motion.h4
                     variants={txtAnimate}
                     >Popular features</motion.h4>

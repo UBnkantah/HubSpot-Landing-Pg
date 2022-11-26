@@ -13,7 +13,7 @@ import FooterSoc from '../FooterSoc/FooterSoc'
 function Main() {
   return (
     <div
-    style={{overflowX: "hidden"}}
+    style={{overflowX: "hidden", fontFamily: "'Montserrat', sans-serif;"}}
     >
       <Navbar />
       <Header />
